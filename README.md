@@ -1,0 +1,2 @@
+# gogocode
+For Golang beginners
