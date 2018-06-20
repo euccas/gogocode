@@ -1,9 +1,9 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1528751876702" ID="ID_1681119742" MODIFIED="1529113771711" TEXT="Learn Golang">
-<node BACKGROUND_COLOR="#ff6666" CREATED="1529113636862" ID="ID_1392524304" MODIFIED="1529455110331" POSITION="right" TEXT="Go Compiler">
-<edge COLOR="#ff6666"/>
-<font NAME="SansSerif" SIZE="14"/>
+<node BACKGROUND_COLOR="#3399ff" COLOR="#ffffff" CREATED="1529113636862" ID="ID_1392524304" MODIFIED="1529456061180" POSITION="right" TEXT="Go Compiler">
+<edge COLOR="#3399ff"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529455135763" ID="ID_129980111" MODIFIED="1529455142611" TEXT="Go version"/>
 <node CREATED="1529455178791" ID="ID_1996861135" MODIFIED="1529455228906" TEXT="Go syntax"/>
 <node CREATED="1529455116243" ID="ID_1989694809" MODIFIED="1529455224863" TEXT="Go tools">
@@ -16,9 +16,9 @@
 <node CREATED="1529455202863" ID="ID_1630539751" MODIFIED="1529455204867" TEXT="Debug"/>
 <node CREATED="1529455235382" ID="ID_40696501" MODIFIED="1529455237700" TEXT="IDE"/>
 </node>
-<node BACKGROUND_COLOR="#ffcc00" CREATED="1529113646332" ID="ID_1965421542" MODIFIED="1529455014151" POSITION="right" TEXT="Data Type">
+<node BACKGROUND_COLOR="#ffcc00" COLOR="#ffffff" CREATED="1529113646332" ID="ID_1965421542" MODIFIED="1529456056245" POSITION="right" TEXT="Data Type">
 <edge COLOR="#ffcc00"/>
-<font NAME="SansSerif" SIZE="14"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529445079511" ID="ID_1885471656" MODIFIED="1529445121915" TEXT="Bool type">
 <node CREATED="1529445190068" ID="ID_117921242" MODIFIED="1529445196970" TEXT="bool">
 <node CREATED="1529445200529" ID="ID_59495010" MODIFIED="1529445206555" TEXT="true, false"/>
@@ -30,8 +30,12 @@
 <node CREATED="1529445232408" ID="ID_994509323" MODIFIED="1529445244772" TEXT="uint, uint8, uint16, uint32, uint64, uintptr"/>
 <node CREATED="1529445246137" ID="ID_1857711808" MODIFIED="1529445254468" TEXT="byte (alias for uint8)"/>
 <node CREATED="1529445257272" ID="ID_1572222531" MODIFIED="1529445272895" TEXT="rune (alias for int32, represents a Unicode code point)"/>
-<node CREATED="1529446016482" ID="ID_347169078" MODIFIED="1529446902912" TEXT="int, uint, uintptr types are machine dependent types:&#xa; usually 32 bits wide on 32-bit systems, &#xa;and 64 bits wide on 64-bit systems"/>
-<node CREATED="1529446065302" ID="ID_1823570682" MODIFIED="1529446109232" TEXT="Use int unless you have a specific reason &#xa;to use a sized or unsigned integer type"/>
+<node CREATED="1529446016482" ID="ID_347169078" MODIFIED="1529455717180" TEXT="int, uint, uintptr types are machine dependent types:&#xa; usually 32 bits wide on 32-bit systems, &#xa;and 64 bits wide on 64-bit systems">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node CREATED="1529446065302" ID="ID_1823570682" MODIFIED="1529455723323" TEXT="Use int unless you have a specific reason &#xa;to use a sized or unsigned integer type">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 <node CREATED="1529445105367" ID="ID_1822313247" MODIFIED="1529446734149" TEXT="Floating-point numbers">
 <node CREATED="1529445301381" ID="ID_902421378" MODIFIED="1529445308485" TEXT="float32, float64">
@@ -43,13 +47,17 @@
 <node CREATED="1529445338576" ID="ID_1825494645" MODIFIED="1529445346789" TEXT="import &quot;math/cmplx&quot;"/>
 <node CREATED="1529446191139" ID="ID_882792365" MODIFIED="1529446208915" TEXT="z complex128 - cmplx.Sqrt(-5 + 12i)"/>
 </node>
-<node CREATED="1529447041919" ID="ID_1218742417" MODIFIED="1529447050671" TEXT="Use float64 for most of the cases"/>
+<node CREATED="1529447041919" ID="ID_1218742417" MODIFIED="1529455704805" TEXT="Use float64 for most of the cases">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 <node CREATED="1529446122028" ID="ID_294084553" MODIFIED="1529446163948" TEXT="fmt.Printf(&quot;Type: %T Value: %v&quot;, var, var)"/>
 </node>
-<node CREATED="1529445132750" FOLDED="true" ID="ID_125440844" MODIFIED="1529454983007" TEXT="String type">
+<node CREATED="1529445132750" ID="ID_125440844" MODIFIED="1529455615967" TEXT="String type">
 <node CREATED="1529453929217" ID="ID_448731392" MODIFIED="1529453945645" TEXT="&quot;abc&quot;">
-<node CREATED="1529453949444" ID="ID_1984629111" MODIFIED="1529453968253" TEXT="Use double-quotes &quot; &quot; only"/>
+<node CREATED="1529453949444" ID="ID_1984629111" MODIFIED="1529455733627" TEXT="Use double-quotes &quot; &quot; only">
+<icon BUILTIN="messagebox_warning"/>
+</node>
 </node>
 <node CREATED="1529454119403" ID="ID_48161644" MODIFIED="1529454139311" TEXT="Holds arbitrary bytes">
 <node CREATED="1529454143759" ID="ID_866627424" MODIFIED="1529454166871" TEXT="Not encoded with any predefined format (Unicode, UTF8, etc.)"/>
@@ -57,8 +65,12 @@
 <node CREATED="1529452520794" ID="ID_1913086381" MODIFIED="1529453994784" TEXT="Strings are immutable"/>
 <node CREATED="1529452546910" ID="ID_1472148053" MODIFIED="1529452565106" TEXT="Length of a string: len(s)"/>
 <node CREATED="1529452579700" ID="ID_646237651" MODIFIED="1529453205458" TEXT="Access string&apos;s bytes: s[i]">
-<node CREATED="1529453212633" ID="ID_1137912597" MODIFIED="1529453240771" TEXT="Illegal to take the address of string element, like &amp;s[i]"/>
-<node CREATED="1529453382646" ID="ID_520076298" MODIFIED="1529453402582" TEXT="Out of range access: runtime error"/>
+<node CREATED="1529453212633" ID="ID_1137912597" MODIFIED="1529455633805" TEXT="Illegal to take the address of string element, like &amp;s[i]">
+<icon BUILTIN="button_cancel"/>
+</node>
+<node CREATED="1529453382646" ID="ID_520076298" MODIFIED="1529455648492" TEXT="Out of range access: runtime error">
+<icon BUILTIN="messagebox_warning"/>
+</node>
 </node>
 <node CREATED="1529454226450" ID="ID_1338890643" MODIFIED="1529454229711" TEXT="Print strings">
 <node CREATED="1529453716918" ID="ID_286161046" MODIFIED="1529454333908" TEXT="fmt.Println(s[1])  // print ASCII value"/>
@@ -82,18 +94,18 @@
 <node CREATED="1529447254470" ID="ID_170370292" MODIFIED="1529448321021" TEXT="i := 42&#xa;f := float64(i)&#xa;u := uint(f)"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#3399ff" CREATED="1529445171239" ID="ID_661666673" MODIFIED="1529455297552" POSITION="right" TEXT="Data Structures">
-<edge COLOR="#3399ff"/>
-<font NAME="SansSerif" SIZE="14"/>
+<node BACKGROUND_COLOR="#ff9966" COLOR="#ffffff" CREATED="1529445171239" ID="ID_661666673" MODIFIED="1529456065227" POSITION="right" TEXT="Data Structures">
+<edge COLOR="#ff9966"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529453870924" ID="ID_376127249" MODIFIED="1529453873836" TEXT="Slice"/>
 <node CREATED="1529452667428" ID="ID_843338280" MODIFIED="1529452670130" TEXT="Array"/>
 <node CREATED="1529453115709" ID="ID_124741779" MODIFIED="1529453118127" TEXT="Map"/>
 <node CREATED="1529452686534" ID="ID_1750523447" MODIFIED="1529452688929" TEXT="Struct"/>
 <node CREATED="1529452702502" ID="ID_617970940" MODIFIED="1529452705274" TEXT="Interface"/>
 </node>
-<node BACKGROUND_COLOR="#00cc66" CREATED="1529113652771" ID="ID_1256472275" MODIFIED="1529455362401" POSITION="right" TEXT="Variables">
+<node BACKGROUND_COLOR="#00cc66" COLOR="#ffffff" CREATED="1529113652771" ID="ID_1256472275" MODIFIED="1529456070684" POSITION="right" TEXT="Variables">
 <edge COLOR="#00cc66"/>
-<font NAME="SansSerif" SIZE="14"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529443996106" ID="ID_910354153" MODIFIED="1529443998730" TEXT="Naming">
 <node CREATED="1529444083048" ID="ID_1303635544" MODIFIED="1529444095794" TEXT="Start with a letter"/>
 <node CREATED="1529444097085" ID="ID_588918325" MODIFIED="1529444113290" TEXT="Contains letters, numbers, or the _ (underscore) symbol"/>
@@ -134,15 +146,19 @@
 </node>
 </node>
 <node CREATED="1529451626529" ID="ID_514022964" MODIFIED="1529451646359" TEXT="Swap variable values">
-<node CREATED="1529451635462" ID="ID_1326473321" MODIFIED="1529451640709" TEXT="a, b = b, a"/>
+<node CREATED="1529451635462" ID="ID_1326473321" MODIFIED="1529455762182" TEXT="a, b = b, a">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 </node>
 <node CREATED="1529446435413" ID="ID_684103972" MODIFIED="1529450895368" TEXT="Constants">
 <node CREATED="1529450993247" ID="ID_1237511173" MODIFIED="1529451023518" TEXT="Declare with the const keyword, others are the same as variables">
 <node CREATED="1529446459518" ID="ID_177706601" MODIFIED="1529446467494" TEXT="const x string = &quot;Hello&quot;"/>
-<node CREATED="1529451185991" ID="ID_456385043" MODIFIED="1529451210585" TEXT="const (&#xa;        Big = 1 &lt;&lt; 100&#xa;        Small = Big &gt;&gt; 99&#xa;)"/>
+<node CREATED="1529451185991" ID="ID_456385043" MODIFIED="1529455580501" TEXT="const (&#xa;        Big = 1 &lt;&lt; 100&#xa;        Small = Big &gt;&gt; 99&#xa;)"/>
 </node>
-<node CREATED="1529451024907" ID="ID_811945275" MODIFIED="1529451037832" TEXT="Constants cannot be declared using the := syntax"/>
+<node CREATED="1529451024907" ID="ID_811945275" MODIFIED="1529455674454" TEXT="Constants cannot be declared using the := syntax">
+<icon BUILTIN="button_cancel"/>
+</node>
 <node CREATED="1529451064204" ID="ID_1283267046" MODIFIED="1529451703814" TEXT="Numeric constants">
 <node CREATED="1529451126386" ID="ID_592089448" MODIFIED="1529451135424" TEXT="High-precision values"/>
 <node CREATED="1529451148228" ID="ID_420629712" MODIFIED="1529451168242" TEXT="Untyped constants take the types needed by the context"/>
@@ -164,9 +180,46 @@
 </node>
 </node>
 </node>
-<node CREATED="1529451485551" ID="ID_1733099926" MODIFIED="1529451487245" POSITION="right" TEXT="Pointers"/>
-<node CREATED="1529113785660" ID="ID_710905544" MODIFIED="1529113790282" POSITION="right" TEXT="Flow Control"/>
+<node BACKGROUND_COLOR="#0066cc" COLOR="#ffffff" CREATED="1529113785660" ID="ID_710905544" MODIFIED="1529456073732" POSITION="right" TEXT="Flow Control">
+<edge COLOR="#0066cc"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
+<node CREATED="1529456348232" ID="ID_1709210659" MODIFIED="1529456438285" TEXT="If">
+<node CREATED="1529456442084" ID="ID_881593454" MODIFIED="1529456582443" TEXT="if condition {&#xa;} else if condition {&#xa;} else if condition {&#xa;} else {&#xa;}">
+<node CREATED="1529456461692" ID="ID_574024681" MODIFIED="1529456494932" TEXT="Parentheses surrounding the condition ( ) are not required"/>
+<node CREATED="1529456474919" ID="ID_963694297" MODIFIED="1529456481132" TEXT="Braces { } are required"/>
+</node>
+<node CREATED="1529456689879" ID="ID_907438876" MODIFIED="1529456765524" TEXT="Start with a short statement">
+<node CREATED="1529456720598" ID="ID_744018111" MODIFIED="1529456744428" TEXT="Variables declared by the statement are only in scope until the end of the if"/>
+<node CREATED="1529456769487" ID="ID_1181295093" MODIFIED="1529456800404" TEXT="if v := math.Pow(x, n); v &lt; lim {&#xa;        return v&#xa;}"/>
+</node>
+</node>
+<node CREATED="1529456004859" ID="ID_1885496288" MODIFIED="1529456100926" TEXT="For">
+<node CREATED="1529456104317" ID="ID_260436084" MODIFIED="1529456113660" TEXT="for loop is the only looping construct"/>
+<node CREATED="1529456120975" ID="ID_114397648" MODIFIED="1529456169955" TEXT="for i := 0; i &lt; 10; i++ {&#xa;        // do something&#xa;}">
+<node CREATED="1529456179532" ID="ID_1434285766" MODIFIED="1529456287268" TEXT="init statement (optional)"/>
+<node CREATED="1529456185599" ID="ID_191788841" MODIFIED="1529456190357" TEXT="condition expression"/>
+<node CREATED="1529456191247" ID="ID_1604659139" MODIFIED="1529456292597" TEXT="post statement (optional)"/>
+<node CREATED="1529456215113" ID="ID_941087371" MODIFIED="1529456412852" TEXT="No parentheses surrounding the three components, not required"/>
+<node CREATED="1529456243032" ID="ID_1368381027" MODIFIED="1529456251172" TEXT="Braces { } are always required"/>
+</node>
+<node CREATED="1529456309881" ID="ID_1024455925" MODIFIED="1529456321187" TEXT="for {&#xa;}">
+<node CREATED="1529456323757" ID="ID_1930411073" MODIFIED="1529456334772" TEXT="Infinite loop, forever"/>
+</node>
+</node>
+</node>
+<node CREATED="1529451485551" ID="ID_1733099926" MODIFIED="1529455929420" POSITION="right" TEXT="Pointers"/>
 <node CREATED="1529113795786" ID="ID_987127015" MODIFIED="1529113800204" POSITION="right" TEXT="File Operation"/>
+<node CREATED="1529456973900" ID="ID_1017647950" MODIFIED="1529457005745" POSITION="left">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="../../../../Users/euchen/Desktop/golang.PNG" />
+  </body>
+</html>
+</richcontent>
+</node>
 <node CREATED="1529113800899" ID="ID_1984710857" MODIFIED="1529113802291" POSITION="right" TEXT="IO"/>
 <node CREATED="1529113781222" ID="ID_547852304" MODIFIED="1529442150525" POSITION="left" TEXT="Standard Library Packages">
 <node CREATED="1529441650104" ID="ID_712916194" MODIFIED="1529441660313" TEXT="main()"/>
