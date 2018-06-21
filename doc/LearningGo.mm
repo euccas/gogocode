@@ -1,7 +1,22 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1528751876702" ID="ID_1681119742" MODIFIED="1529113771711" TEXT="Learn Golang">
-<node BACKGROUND_COLOR="#3399ff" COLOR="#ffffff" CREATED="1529113636862" ID="ID_1392524304" MODIFIED="1529456061180" POSITION="right" TEXT="Go Compiler">
+<node CREATED="1528751876702" ID="ID_1681119742" MODIFIED="1529535760292">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="text-align: center">
+      <img src="../../../../Users/euchen/Desktop/golang.PNG" />
+      
+    </p>
+    <p style="text-align: center">
+      <font size="6"><b>&#160;Learn Golang</b></font>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node BACKGROUND_COLOR="#3399ff" COLOR="#ffffff" CREATED="1529113636862" FOLDED="true" ID="ID_1392524304" MODIFIED="1529534618766" POSITION="right" TEXT="Go Compiler">
 <edge COLOR="#3399ff"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529455135763" ID="ID_129980111" MODIFIED="1529455142611" TEXT="Go version"/>
@@ -16,7 +31,7 @@
 <node CREATED="1529455202863" ID="ID_1630539751" MODIFIED="1529455204867" TEXT="Debug"/>
 <node CREATED="1529455235382" ID="ID_40696501" MODIFIED="1529455237700" TEXT="IDE"/>
 </node>
-<node BACKGROUND_COLOR="#ffcc00" COLOR="#ffffff" CREATED="1529113646332" ID="ID_1965421542" MODIFIED="1529456056245" POSITION="right" TEXT="Data Type">
+<node BACKGROUND_COLOR="#ffcc00" COLOR="#ffffff" CREATED="1529113646332" ID="ID_1965421542" MODIFIED="1529536204200" POSITION="right" TEXT="Data Type">
 <edge COLOR="#ffcc00"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529445079511" ID="ID_1885471656" MODIFIED="1529445121915" TEXT="Bool type">
@@ -94,16 +109,41 @@
 <node CREATED="1529447254470" ID="ID_170370292" MODIFIED="1529448321021" TEXT="i := 42&#xa;f := float64(i)&#xa;u := uint(f)"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ff9966" COLOR="#ffffff" CREATED="1529445171239" ID="ID_661666673" MODIFIED="1529456065227" POSITION="right" TEXT="Data Structures">
+<node BACKGROUND_COLOR="#ff9966" COLOR="#ffffff" CREATED="1529445171239" ID="ID_661666673" MODIFIED="1529534602680" POSITION="right" TEXT="Data Structures">
 <edge COLOR="#ff9966"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529453870924" ID="ID_376127249" MODIFIED="1529453873836" TEXT="Slice"/>
 <node CREATED="1529452667428" ID="ID_843338280" MODIFIED="1529452670130" TEXT="Array"/>
 <node CREATED="1529453115709" ID="ID_124741779" MODIFIED="1529453118127" TEXT="Map"/>
-<node CREATED="1529452686534" ID="ID_1750523447" MODIFIED="1529452688929" TEXT="Struct"/>
-<node CREATED="1529452702502" ID="ID_617970940" MODIFIED="1529452705274" TEXT="Interface"/>
+<node CREATED="1529452686534" ID="ID_1750523447" MODIFIED="1529452688929" TEXT="Struct">
+<node CREATED="1529536231744" ID="ID_310011409" MODIFIED="1529536283568" TEXT="type Vertex struct {&#xa;        X int&#xa;        Y int&#xa;}&#xa;&#xa;fmt.Println(Vertex{1, 2})">
+<node CREATED="1529536294321" ID="ID_1453623156" MODIFIED="1529536306369" TEXT="A struct is a collection of fields"/>
+<node CREATED="1529536346133" ID="ID_1460725415" MODIFIED="1529536354153" TEXT="Access struct fields using a dot">
+<node CREATED="1529536358122" ID="ID_1905642972" MODIFIED="1529536381217" TEXT="v := Vertex{1, 2}&#xa;v.X = 4&#xa;fmt.Println(v.X)"/>
 </node>
-<node BACKGROUND_COLOR="#00cc66" COLOR="#ffffff" CREATED="1529113652771" ID="ID_1256472275" MODIFIED="1529456070684" POSITION="right" TEXT="Variables">
+</node>
+</node>
+<node CREATED="1529534560377" ID="ID_1184855312" MODIFIED="1529534583512" TEXT="Pointers">
+<node CREATED="1529535899479" ID="ID_596550128" MODIFIED="1529535909788" TEXT="*T">
+<node CREATED="1529535957078" ID="ID_280650578" MODIFIED="1529535963270" TEXT="var p *int"/>
+<node CREATED="1529535913806" ID="ID_446970382" MODIFIED="1529536039343" TEXT="A pointer to a T type"/>
+<node CREATED="1529535928458" ID="ID_603414395" MODIFIED="1529535936654" TEXT="nil: zero value"/>
+</node>
+<node CREATED="1529535992746" ID="ID_1514336807" MODIFIED="1529535994454" TEXT="&amp;">
+<node CREATED="1529536002559" ID="ID_218236218" MODIFIED="1529536016485" TEXT="i := 42&#xa;p = &amp;i"/>
+<node CREATED="1529536018746" ID="ID_1658350140" MODIFIED="1529536031366" TEXT="Generate a pointer to its operand"/>
+</node>
+<node CREATED="1529536045769" ID="ID_1720146513" MODIFIED="1529536047438" TEXT="*">
+<node CREATED="1529536051319" ID="ID_1027839072" MODIFIED="1529536068055" TEXT="fmt.Println(*p) // read i through the pointer p"/>
+<node CREATED="1529536070089" ID="ID_1087392768" MODIFIED="1529536080071" TEXT="*p = 21 // set i through the pointer p"/>
+<node CREATED="1529536080491" ID="ID_1778552757" MODIFIED="1529536121855" TEXT="Denote the pointer&apos;s underlying value&#xa;(i.e. dereference, indirect)"/>
+</node>
+<node CREATED="1529536134196" ID="ID_1905621690" MODIFIED="1529536148280" TEXT="No pointer arithmetic">
+<icon BUILTIN="button_cancel"/>
+</node>
+</node>
+</node>
+<node BACKGROUND_COLOR="#00cc66" COLOR="#ffffff" CREATED="1529113652771" FOLDED="true" ID="ID_1256472275" MODIFIED="1529534610134" POSITION="right" TEXT="Variables">
 <edge COLOR="#00cc66"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529443996106" ID="ID_910354153" MODIFIED="1529443998730" TEXT="Naming">
@@ -180,7 +220,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#0066cc" COLOR="#ffffff" CREATED="1529113785660" ID="ID_710905544" MODIFIED="1529456073732" POSITION="right" TEXT="Flow Control">
+<node BACKGROUND_COLOR="#0066cc" COLOR="#ffffff" CREATED="1529113785660" FOLDED="true" ID="ID_710905544" MODIFIED="1529534613173" POSITION="right" TEXT="Flow Control">
 <edge COLOR="#0066cc"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529456348232" ID="ID_1709210659" MODIFIED="1529456438285" TEXT="If">
@@ -206,22 +246,58 @@
 <node CREATED="1529456323757" ID="ID_1930411073" MODIFIED="1529456334772" TEXT="Infinite loop, forever"/>
 </node>
 </node>
+<node CREATED="1529529115458" ID="ID_1662286291" MODIFIED="1529529117675" TEXT="Switch">
+<node CREATED="1529529215184" ID="ID_1920081295" MODIFIED="1529529304455" TEXT="switch os := runtime.GOOS; os {&#xa;        case  &quot;darwin&quot;:&#xa;                fmt.Println(&quot;OS X.&quot;)&#xa;        case &quot;linux&quot;:&#xa;                fmt.Println(&quot;Linux.&quot;)&#xa;        default:&#xa;                fmt.Printf(&quot;%s.&quot;, os)&#xa;        }">
+<node CREATED="1529529326111" ID="ID_1932569084" MODIFIED="1529529333390" TEXT="default case is optional"/>
+<node CREATED="1529530106187" ID="ID_703702833" MODIFIED="1529530113952" TEXT="condition is optional">
+<node CREATED="1529530024978" ID="ID_1453511479" MODIFIED="1529530049416" TEXT="Switch without a condition is the same as switch true"/>
+<node CREATED="1529530055305" ID="ID_662035709" MODIFIED="1529530065425" TEXT="A clean way to write long if-then-else chains"/>
 </node>
-<node CREATED="1529451485551" ID="ID_1733099926" MODIFIED="1529455929420" POSITION="right" TEXT="Pointers"/>
+</node>
+<node CREATED="1529529144272" ID="ID_651990556" MODIFIED="1529529479458" TEXT="Runs only the selected case, not all the cases that follow">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node CREATED="1529529174226" ID="ID_901932278" MODIFIED="1529529477928" TEXT="Switch cases need not be constants, or integer values">
+<node CREATED="1529529485976" ID="ID_1074034790" MODIFIED="1529529504958" TEXT="switch i {&#xa;case 0:&#xa;case f():&#xa;}"/>
+</node>
+</node>
+<node CREATED="1529532951923" ID="ID_51264542" MODIFIED="1529532956608" TEXT="Break">
+<node CREATED="1529533007197" ID="ID_1727472961" MODIFIED="1529534025636" TEXT="break [ Label ]">
+<node CREATED="1529532976049" ID="ID_1703055257" MODIFIED="1529532994490" TEXT="Terminate execution of the innermost for, switch, or select statement"/>
+<node CREATED="1529534035760" ID="ID_1510363691" MODIFIED="1529534234744" TEXT="Label must be an enclosing for, switch, or select statement">
+<node CREATED="1529534070533" ID="ID_1574914431" MODIFIED="1529534141877" TEXT="OuterLoop:&#xa;        for i = 0; i &lt; n; i++ {&#xa;                switch a[i] {&#xa;                case nil:&#xa;                        state = Error&#xa;                        break OuterLoop&#xa;                }&#xa;        } "/>
+</node>
+</node>
+</node>
+<node CREATED="1529532957074" ID="ID_402943728" MODIFIED="1529532958673" TEXT="Continue">
+<node CREATED="1529534159760" ID="ID_842127922" MODIFIED="1529534172526" TEXT="continue [ Label ]">
+<node CREATED="1529534178086" ID="ID_1282126897" MODIFIED="1529534207223" TEXT="Begin the next iteration of the innermost for loop"/>
+<node CREATED="1529534239612" ID="ID_1491694904" MODIFIED="1529534249463" TEXT="Label must be an enclosing for statement">
+<node CREATED="1529534253959" ID="ID_1925053983" MODIFIED="1529534415746" TEXT="RowLoop:&#xa;        for y, row := range rows {&#xa;                for x, data := range row {&#xa;                        if data == endOfRow {&#xa;                                continue RowLoop&#xa;                        }&#xa;                        row[x] = data + 1&#xa;                }&#xa;        }"/>
+</node>
+</node>
+</node>
+<node CREATED="1529532959371" ID="ID_1579563715" MODIFIED="1529532960609" TEXT="Goto">
+<node CREATED="1529534436178" ID="ID_1381838478" MODIFIED="1529534441010" TEXT="goto Label">
+<node CREATED="1529534444515" ID="ID_1312139475" MODIFIED="1529534457779" TEXT="Transfer control to the statement with the label within the same function"/>
+</node>
+</node>
+<node CREATED="1529530142250" ID="ID_1783252971" MODIFIED="1529532966853" TEXT="Defer">
+<node CREATED="1529530397502" ID="ID_274610727" MODIFIED="1529530431655" TEXT="func main() {&#xa;        defer fmt.Println(&quot;after&quot;)&#xa;        fmt.Println(&quot;first&quot;)&#xa;}">
+<node CREATED="1529530306881" ID="ID_817216809" MODIFIED="1529530328576" TEXT="Defers the execution of a function until the surrounding function returns"/>
+<node CREATED="1529530344556" ID="ID_103240865" MODIFIED="1529532782435" TEXT="The deferred call&apos;s aruments are evaluated immediately, &#xa;when the defer statement is evaluated, &#xa;but the function call is not executed until the surrounding function returns"/>
+<node CREATED="1529530461869" ID="ID_916976823" MODIFIED="1529532815232" TEXT="defered functions calls are pushed into a stack,&#xa;they are executed in LIFO order">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+<node CREATED="1529532713662" ID="ID_1629644220" MODIFIED="1529532861214" TEXT="Used to simplify functions that perform various clean-up actions,&#xa;could use together with panic and recover"/>
+</node>
+</node>
 <node CREATED="1529113795786" ID="ID_987127015" MODIFIED="1529113800204" POSITION="right" TEXT="File Operation"/>
-<node CREATED="1529456973900" ID="ID_1017647950" MODIFIED="1529457005745" POSITION="left">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <img src="../../../../Users/euchen/Desktop/golang.PNG" />
-  </body>
-</html>
-</richcontent>
-</node>
 <node CREATED="1529113800899" ID="ID_1984710857" MODIFIED="1529113802291" POSITION="right" TEXT="IO"/>
-<node CREATED="1529113781222" ID="ID_547852304" MODIFIED="1529442150525" POSITION="left" TEXT="Standard Library Packages">
+<node BACKGROUND_COLOR="#9966ff" COLOR="#ffffff" CREATED="1529113781222" FOLDED="true" ID="ID_547852304" MODIFIED="1529534623246" POSITION="left" TEXT="Standard Library Packages">
+<edge COLOR="#9966ff"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529441650104" ID="ID_712916194" MODIFIED="1529441660313" TEXT="main()"/>
 <node CREATED="1529441911196" ID="ID_518903949" MODIFIED="1529442188281" TEXT="import packages">
 <node CREATED="1529441925799" ID="ID_464740814" MODIFIED="1529441930519" TEXT="import &quot;package&quot;"/>
@@ -250,7 +326,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1529113826232" ID="ID_45303023" MODIFIED="1529442326399" POSITION="left" TEXT="Functions">
+<node BACKGROUND_COLOR="#009933" COLOR="#ffffff" CREATED="1529113826232" FOLDED="true" ID="ID_45303023" MODIFIED="1529534721463" POSITION="left" TEXT="Functions">
+<edge COLOR="#009933"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529442329412" ID="ID_1982246518" MODIFIED="1529443817837" TEXT="Function Definition">
 <node CREATED="1529442445312" ID="ID_234352520" MODIFIED="1529442494924" TEXT="func myfunc()"/>
 <node CREATED="1529442496079" ID="ID_1124071157" MODIFIED="1529442757343" TEXT="func myfunc(x int, y int) int {&#xa;        return x + y&#xa;}&#xa;">
@@ -275,6 +353,7 @@
 </node>
 </node>
 <node CREATED="1529113972257" ID="ID_464598403" MODIFIED="1529114011410" POSITION="left" TEXT="Interface"/>
+<node CREATED="1529536128970" ID="ID_1968343736" MODIFIED="1529536128970" POSITION="left" TEXT=""/>
 <node CREATED="1529113978430" ID="ID_1450888648" MODIFIED="1529114020157" POSITION="left" TEXT="Concurrency"/>
 </node>
 </map>
