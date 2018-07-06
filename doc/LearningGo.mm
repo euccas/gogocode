@@ -310,7 +310,7 @@
 <node CREATED="1529532713662" ID="ID_1629644220" MODIFIED="1529532861214" TEXT="Used to simplify functions that perform various clean-up actions,&#xa;could use together with panic and recover"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ff9966" COLOR="#ffffff" CREATED="1529445171239" FOLDED="true" ID="ID_661666673" MODIFIED="1530906529365" POSITION="right" TEXT="Data Structures">
+<node BACKGROUND_COLOR="#ff9966" COLOR="#ffffff" CREATED="1529445171239" FOLDED="true" ID="ID_661666673" MODIFIED="1530910484410" POSITION="right" TEXT="Data Structures">
 <edge COLOR="#ff9966"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529452667428" ID="ID_843338280" MODIFIED="1529452670130" TEXT="Array">
@@ -340,22 +340,41 @@
 <node CREATED="1529453870924" ID="ID_376127249" MODIFIED="1530645798949" TEXT="Slice">
 <node CREATED="1530645813482" ID="ID_1898503413" MODIFIED="1530645823537" TEXT="[]T">
 <node CREATED="1530645826657" ID="ID_376610678" MODIFIED="1530645839518" TEXT="a slice with elements of type T"/>
-<node CREATED="1530645844399" ID="ID_742383215" MODIFIED="1530645865710" TEXT="var s []int = primes[1:4]"/>
+<node CREATED="1530909950680" ID="ID_678035794" MODIFIED="1530909967221" TEXT="Create a slice with make function">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530909969932" ID="ID_772586138" MODIFIED="1530909997474" TEXT="x := make([]float64, 5)"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530910018680" ID="ID_1117690138" MODIFIED="1530910061771" TEXT="x := make([]float64, 5, 10)">
+<node CREATED="1530910031749" ID="ID_76041681" MODIFIED="1530910050677" TEXT="Make the underling array&apos;s length 10"/>
+</node>
+</node>
+<node CREATED="1530910071453" ID="ID_1258643149" MODIFIED="1530910080966" TEXT="Create a slice reference to an existing array">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530645844399" ID="ID_742383215" MODIFIED="1530910174446" TEXT="primes := []int{2,3,5,7,9,11}&#xa;var s []int = primes[1:4]">
+<node CREATED="1530910190238" ID="ID_1630383060" MODIFIED="1530910246903" TEXT="s[0:4] =&gt; [2,3,5,7]&#xa;s[1:3] =&gt; [3,5]"/>
+</node>
 <node CREATED="1530645916934" ID="ID_771079345" MODIFIED="1530645963467" TEXT="a[low : high] is a half-open range, includes the first element, but excludes the last one">
 <icon BUILTIN="messagebox_warning"/>
 </node>
 </node>
-<node CREATED="1530645872639" FOLDED="true" ID="ID_1219854732" MODIFIED="1530646164622" TEXT="A slice is a dynamically-sized, flexible view into the elements of an array">
+</node>
+<node CREATED="1530645872639" ID="ID_1219854732" MODIFIED="1530909880020" TEXT="A slice is a dynamically-sized, flexible view into the elements of an array">
 <node CREATED="1530646075352" ID="ID_396733871" MODIFIED="1530646087183" TEXT="it does not store data, just be a reference"/>
 </node>
 <node CREATED="1530646096192" ID="ID_1655053184" MODIFIED="1530654985033" TEXT="Change the elements of a slice modifies &#xa;the corresponding elements of its underlying array">
 <icon BUILTIN="info"/>
 <node CREATED="1530646133552" ID="ID_391946496" MODIFIED="1530646156059" TEXT="Other slices share the same array &#xa;will see the changes"/>
-<node CREATED="1530646249898" ID="ID_673522754" MODIFIED="1530646289655" TEXT="a := names[0:2]&#xa;b := names[1:3]&#xa;b[0] = &quot;XXX&quot; // a[1] will see the change"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530646249898" ID="ID_673522754" MODIFIED="1530909911857" TEXT="a := names[0:2]&#xa;b := names[1:3]&#xa;b[0] = &quot;XXX&quot; // a[1] will see the change"/>
 </node>
-<node CREATED="1530646407220" ID="ID_1199566245" MODIFIED="1530646424652" TEXT="Slice literal: liek an array literal without the length">
-<node CREATED="1530646428237" ID="ID_742481800" MODIFIED="1530646469628" TEXT="q := []bool{true, true, false}"/>
-<node CREATED="1530646487606" ID="ID_1149967596" MODIFIED="1530646534849" TEXT="s := []struct {&#xa;      i int&#xa;      b bool&#xa;}{&#xa;      {2, true},&#xa;      {3, false},&#xa;}"/>
+<node CREATED="1530910298378" ID="ID_1300972728" MODIFIED="1530910319736" TEXT="Slice functions">
+<node CREATED="1530910322944" ID="ID_248977789" MODIFIED="1530910325584" TEXT="append">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530910336368" ID="ID_371333088" MODIFIED="1530910471792" TEXT="slice1 := []int{1,2,3}&#xa;slice2 := append(slice1, 4, 5}&#xa;// slice2 [1, 2, 3, 4, 5]"/>
+</node>
+<node CREATED="1530910326218" ID="ID_1339795077" MODIFIED="1530910327112" TEXT="copy">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530910395274" ID="ID_1457925362" MODIFIED="1530910462262" TEXT="slice1 := []int{1,2,3}&#xa;slice2 := make([]int, 2)&#xa;copy(slice2, slice1)&#xa;// slice2: [1,2]"/>
+</node>
+</node>
+<node CREATED="1530646407220" ID="ID_1199566245" MODIFIED="1530910292890" TEXT="Slice literal: link an array literal without the length">
+<icon BUILTIN="help"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530646428237" ID="ID_742481800" MODIFIED="1530909929889" TEXT="q := []bool{true, true, false}"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530646487606" ID="ID_1149967596" MODIFIED="1530909920474" TEXT="s := []struct {&#xa;      i int&#xa;      b bool&#xa;}{&#xa;      {2, true},&#xa;      {3, false},&#xa;}"/>
 </node>
 <node CREATED="1530647014346" ID="ID_1079772150" MODIFIED="1530647037087" TEXT="TODO">
 <icon BUILTIN="stop-sign"/>
@@ -419,7 +438,7 @@
 <node CREATED="1530904774199" ID="ID_245855097" MODIFIED="1530904776000" TEXT="go doc regexp/syntax"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#339900" COLOR="#ffffff" CREATED="1529113826232" FOLDED="true" ID="ID_45303023" MODIFIED="1530906050696" POSITION="left" TEXT="Functions">
+<node BACKGROUND_COLOR="#339900" COLOR="#ffffff" CREATED="1529113826232" FOLDED="true" ID="ID_45303023" MODIFIED="1530912294653" POSITION="left" TEXT="Functions">
 <edge COLOR="#339900"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529442329412" ID="ID_1982246518" MODIFIED="1529443817837" TEXT="Function Definition">
@@ -431,6 +450,11 @@
 </node>
 <node CREATED="1529442860575" ID="ID_637145328" MODIFIED="1529443828501" TEXT="Function Call">
 <node CREATED="1529442870841" ID="ID_360844578" MODIFIED="1529442885563" TEXT="myfunc(paramters)"/>
+<node CREATED="1530911857936" ID="ID_1269110788" MODIFIED="1530911863292" TEXT="Variadic Functions">
+<node CREATED="1530911868501" ID="ID_964531034" MODIFIED="1530911883868" TEXT="Called with any number of trailing arguments"/>
+<node CREATED="1530911885823" ID="ID_133560752" MODIFIED="1530911895613" TEXT="fmt.Println"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530911896416" ID="ID_295264631" MODIFIED="1530912000723" TEXT="func sum(nums ...int) {&#xa;    total := 0&#xa;    for _, num := range nums {&#xa;        total += num&#xa;    }&#xa;}&#xa;sum(1,2)&#xa;sum(1,2,3)&#xa;nums := []int{1,2,3,4}&#xa;sum(nums...)"/>
+</node>
 </node>
 <node CREATED="1529442900942" ID="ID_822099921" MODIFIED="1529443837075" TEXT="Function Returns">
 <node CREATED="1529442912672" ID="ID_289770358" MODIFIED="1529442922521" TEXT="return">
@@ -444,8 +468,14 @@
 <node BACKGROUND_COLOR="#ffffcc" CREATED="1529443425716" ID="ID_12018651" MODIFIED="1530904044023" TEXT="func swap(x, y string) (string, string) {&#xa;        return y, x&#xa;}"/>
 </node>
 </node>
-<node CREATED="1530903378396" ID="ID_578474665" MODIFIED="1530903728680" TEXT="Closure">
-<icon BUILTIN="stop-sign"/>
+<node CREATED="1530903378396" ID="ID_578474665" MODIFIED="1530912053475" TEXT="Closure">
+<node CREATED="1530912056745" ID="ID_262614139" MODIFIED="1530912189579" TEXT="Formed by Anonymous functions">
+<icon BUILTIN="info"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530912092649" ID="ID_1617846474" MODIFIED="1530912104759" TEXT="func intSeq() func() int {&#xa;    i := 0&#xa;    return func() int {&#xa;        i++&#xa;        return i&#xa;    }&#xa;}"/>
+</node>
+</node>
+<node CREATED="1530912136606" ID="ID_23267005" MODIFIED="1530912139737" TEXT="Recursion">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530912147106" ID="ID_1131979581" MODIFIED="1530912177744" TEXT="func factorial(n int) int {&#xa;    if n == 0 {&#xa;        return 1&#xa;    }&#xa;    return n * factorial(n-1)&#xa;}"/>
 </node>
 </node>
 <node BACKGROUND_COLOR="#0000cc" COLOR="#ffffff" CREATED="1529534560377" FOLDED="true" ID="ID_1184855312" MODIFIED="1530906051880" POSITION="left" TEXT="Pointers">
@@ -515,6 +545,10 @@
 <edge COLOR="#66ccff"/>
 <node BACKGROUND_COLOR="#66ccff" COLOR="#ffffff" CREATED="1530906219336" ID="ID_1349228700" MODIFIED="1530906265331" TEXT="Reference">
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
+<node CREATED="1530911649294" ID="ID_762203491" LINK="https://tour.golang.org/welcome/1" MODIFIED="1530911731425" TEXT="A Tour of Go"/>
+<node CREATED="1530911654625" ID="ID_1180970949" LINK="https://golang.org/doc/effective_go.html" MODIFIED="1530911725357" TEXT="Effective Go"/>
+<node CREATED="1530911783820" ID="ID_1015499458" LINK="https://golang.org/doc/faq" MODIFIED="1530911793321" TEXT="Go FAQ"/>
+<node CREATED="1530911660435" ID="ID_728773704" LINK="https://gobyexample.com/" MODIFIED="1530911686477" TEXT="Go by Examples"/>
 </node>
 <node BACKGROUND_COLOR="#66ccff" COLOR="#ffffff" CREATED="1530906110343" ID="ID_708982926" MODIFIED="1530906445419" TEXT="Small Projects">
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
@@ -566,7 +600,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#00cccc" COLOR="#ffffff" CREATED="1529113978430" FOLDED="true" ID="ID_1450888648" MODIFIED="1530906524981" POSITION="left" TEXT="Interface">
+<node BACKGROUND_COLOR="#00cccc" COLOR="#ffffff" CREATED="1529113978430" FOLDED="true" ID="ID_1450888648" MODIFIED="1530911611270" POSITION="left" TEXT="Interface">
 <edge COLOR="#00cccc"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <icon BUILTIN="hourglass"/>
@@ -648,9 +682,48 @@
 <node CREATED="1530665691502" ID="ID_658087316" MODIFIED="1530665694241" TEXT="Images"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#996600" COLOR="#ffffff" CREATED="1530647130402" ID="ID_280470254" MODIFIED="1530654353996" POSITION="left" TEXT="Concurrency">
+<node BACKGROUND_COLOR="#996600" COLOR="#ffffff" CREATED="1530647130402" FOLDED="true" ID="ID_280470254" MODIFIED="1530911637774" POSITION="left" TEXT="Concurrency">
 <edge COLOR="#996600"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
+<icon BUILTIN="hourglass"/>
+<node CREATED="1530909557070" ID="ID_420076646" MODIFIED="1530910737697" TEXT="Goroutines">
+<node CREATED="1530909598199" ID="ID_1687177804" MODIFIED="1530909602263" TEXT="go f(x, y, z)">
+<node CREATED="1530910613909" ID="ID_993788896" MODIFIED="1530910629201" TEXT="A go routine is a function that is capable of running concurrently with other functions"/>
+<node CREATED="1530909602754" ID="ID_870037896" MODIFIED="1530910592432" TEXT="A goroutine is a lightweight thread managed by the Go runtime"/>
+</node>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530910740667" ID="ID_1167926728" MODIFIED="1530910766552" TEXT="for i := 0; i &lt; 10; i++ { &#xa;     go f(i) &#xa;}">
+<node CREATED="1530909647193" ID="ID_554495754" MODIFIED="1530910737697" TEXT="Goroutines run in the same address space,&#xa;access to shared memory must be synchronized"/>
+</node>
+<node CREATED="1530911547933" ID="ID_1350340174" MODIFIED="1530911554410" TEXT="Select"/>
+</node>
+<node CREATED="1530909572008" ID="ID_656090098" MODIFIED="1530910833206" TEXT="Channels">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530909824147" ID="ID_876956787" MODIFIED="1530910847921" TEXT="ch := make(chan int)&#xa;ch &lt;- v    // Send to channel ch&#xa;v := &lt;- ch    // Receive from ch and assign value to v">
+<node CREATED="1530910869155" ID="ID_1036285314" MODIFIED="1530910994178" TEXT="By default, sends and receives block until the other side is ready.&#xa;This allows goroutines to synchronize &#xa;without explicit locks or condition variables.">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+<node CREATED="1530911074223" ID="ID_1527297766" MODIFIED="1530911078837" TEXT="Buffered channels">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530911087419" ID="ID_1974290017" MODIFIED="1530911125793" TEXT="ch := make(chan int, 100)">
+<node CREATED="1530911097231" ID="ID_1856873553" MODIFIED="1530911206435" TEXT="Second argument to make: buffer length"/>
+</node>
+<node CREATED="1530911201960" ID="ID_1595792846" MODIFIED="1530911239636" TEXT="Sends to a buffered channel block only when the buffer is full.&#xa;Receives block when the buffer is empty."/>
+<node CREATED="1530911245520" ID="ID_587198737" MODIFIED="1530911252475" TEXT="When overfill the buffer">
+<node CREATED="1530911265524" ID="ID_1669303353" MODIFIED="1530911507929" TEXT="Runtime error: [chan send] all goroutines are asleep - deadlock!">
+<icon BUILTIN="button_cancel"/>
+</node>
+</node>
+<node CREATED="1530911301799" ID="ID_894747630" MODIFIED="1530911314099" TEXT="When overconsume the buffer">
+<node CREATED="1530911419750" ID="ID_109468210" MODIFIED="1530911511993" TEXT="Runtime error: [chan receive] all goroutines are asleep - deadlock!">
+<icon BUILTIN="button_cancel"/>
+</node>
+</node>
+</node>
+<node CREATED="1530911495485" ID="ID_1593832470" MODIFIED="1530911499696" TEXT="Range and Close"/>
+</node>
+<node CREATED="1530909585977" ID="ID_147856799" MODIFIED="1530909589023" TEXT="sync.Mutex">
+<node CREATED="1530911573020" ID="ID_126144607" MODIFIED="1530911575259" TEXT="Lock"/>
+<node CREATED="1530911575790" ID="ID_1282006984" MODIFIED="1530911577227" TEXT="Unlock"/>
+</node>
 </node>
 <node BACKGROUND_COLOR="#cccc00" COLOR="#ffffff" CREATED="1529113795786" FOLDED="true" ID="ID_987127015" MODIFIED="1530902891197" POSITION="right" TEXT="File Operation">
 <edge COLOR="#cccc00"/>
@@ -741,9 +814,11 @@
 <node CREATED="1530648541448" ID="ID_477651292" MODIFIED="1530648625846" TEXT="Read from a string"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#006666" COLOR="#ffffff" CREATED="1530665906791" ID="ID_1225824029" MODIFIED="1530665960763" POSITION="right" TEXT="Panic">
+<node BACKGROUND_COLOR="#006666" COLOR="#ffffff" CREATED="1530665906791" FOLDED="true" ID="ID_1225824029" MODIFIED="1530911609796" POSITION="right" TEXT="Panic">
 <edge COLOR="#006666"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
+<node CREATED="1530910527233" ID="ID_1717598258" MODIFIED="1530910529066" TEXT="panic"/>
+<node CREATED="1530910529541" ID="ID_97627603" MODIFIED="1530910530937" TEXT="recover"/>
 </node>
 </node>
 </map>
