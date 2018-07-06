@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node BACKGROUND_COLOR="#66ccff" CREATED="1528751876702" ID="ID_1681119742" MODIFIED="1530660313477">
+<node BACKGROUND_COLOR="#ffffff" CREATED="1528751876702" ID="ID_1681119742" MODIFIED="1530902870115">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -15,7 +15,7 @@
     </p>
   </body>
 </html></richcontent>
-<node BACKGROUND_COLOR="#3399ff" COLOR="#ffffff" CREATED="1529113636862" ID="ID_1392524304" MODIFIED="1530657635368" POSITION="right" TEXT="Go Compiler">
+<node BACKGROUND_COLOR="#3399ff" COLOR="#ffffff" CREATED="1529113636862" FOLDED="true" ID="ID_1392524304" MODIFIED="1530902910481" POSITION="right" TEXT="Go Compiler">
 <edge COLOR="#3399ff"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529455135763" ID="ID_129980111" MODIFIED="1529455142611" TEXT="Go version">
@@ -74,7 +74,7 @@
 <node CREATED="1530644287940" ID="ID_605037319" MODIFIED="1530644308308" TEXT="GoLand"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffcc00" COLOR="#ffffff" CREATED="1529113646332" ID="ID_1965421542" MODIFIED="1530657637771" POSITION="right" TEXT="Data Type">
+<node BACKGROUND_COLOR="#ffcc00" COLOR="#ffffff" CREATED="1529113646332" FOLDED="true" ID="ID_1965421542" MODIFIED="1530902970353" POSITION="right" TEXT="Data Type">
 <edge COLOR="#ffcc00"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529445079511" ID="ID_1885471656" MODIFIED="1529445121915" TEXT="Bool type">
@@ -146,13 +146,15 @@
 <node CREATED="1529447125668" ID="ID_1816939919" MODIFIED="1529447133984" TEXT="String: &quot;&quot; (empty string)"/>
 </node>
 <node CREATED="1529447151685" ID="ID_1671481255" MODIFIED="1529447155056" TEXT="Type Conversion">
-<node CREATED="1529448406352" ID="ID_477659898" MODIFIED="1529448431879" TEXT="In Go assignment between items of different type requires an explicit conversion"/>
+<node CREATED="1529448406352" ID="ID_477659898" MODIFIED="1530902965423" TEXT="In Go assignment between items of different type requires an explicit conversion">
+<icon BUILTIN="info"/>
+</node>
 <node CREATED="1529447184117" ID="ID_957114705" MODIFIED="1529447203855" TEXT="T(v): converts the value v to the type T"/>
 <node CREATED="1529447214819" ID="ID_1576267107" MODIFIED="1529448332383" TEXT="var i int = 42&#xa;var f float64 = float64(i)&#xa;var u uint = uint(f)"/>
 <node CREATED="1529447254470" ID="ID_170370292" MODIFIED="1529448321021" TEXT="i := 42&#xa;f := float64(i)&#xa;u := uint(f)"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#00cc66" COLOR="#ffffff" CREATED="1529113652771" ID="ID_1256472275" MODIFIED="1530657639755" POSITION="right" TEXT="Variables">
+<node BACKGROUND_COLOR="#00cc66" COLOR="#ffffff" CREATED="1529113652771" FOLDED="true" ID="ID_1256472275" MODIFIED="1530903058721" POSITION="right" TEXT="Variables">
 <edge COLOR="#00cc66"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529443996106" ID="ID_910354153" MODIFIED="1529443998730" TEXT="Naming">
@@ -229,16 +231,20 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#3366ff" COLOR="#ffffff" CREATED="1529113785660" ID="ID_710905544" MODIFIED="1530660333423" POSITION="right" TEXT="Flow Control">
+<node BACKGROUND_COLOR="#3366ff" COLOR="#ffffff" CREATED="1529113785660" FOLDED="true" ID="ID_710905544" MODIFIED="1530906061776" POSITION="right" TEXT="Flow Control">
 <edge COLOR="#3366ff"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529456348232" ID="ID_1709210659" MODIFIED="1529456438285" TEXT="If">
 <node CREATED="1529456442084" ID="ID_881593454" MODIFIED="1529456582443" TEXT="if condition {&#xa;} else if condition {&#xa;} else if condition {&#xa;} else {&#xa;}">
-<node CREATED="1529456461692" ID="ID_574024681" MODIFIED="1529456494932" TEXT="Parentheses surrounding the condition ( ) are not required"/>
+<node CREATED="1529456461692" ID="ID_574024681" MODIFIED="1530903085147" TEXT="Parentheses surrounding the condition ( ) are not required">
+<icon BUILTIN="info"/>
+</node>
 <node CREATED="1529456474919" ID="ID_963694297" MODIFIED="1529456481132" TEXT="Braces { } are required"/>
 </node>
 <node CREATED="1529456689879" ID="ID_907438876" MODIFIED="1529456765524" TEXT="Start with a short statement">
-<node CREATED="1529456720598" ID="ID_744018111" MODIFIED="1529456744428" TEXT="Variables declared by the statement are only in scope until the end of the if"/>
+<node CREATED="1529456720598" ID="ID_744018111" MODIFIED="1530903104984" TEXT="Variables declared by the statement are only in scope until the end of the if">
+<icon BUILTIN="messagebox_warning"/>
+</node>
 <node CREATED="1529456769487" ID="ID_1181295093" MODIFIED="1529456800404" TEXT="if v := math.Pow(x, n); v &lt; lim {&#xa;        return v&#xa;}"/>
 </node>
 </node>
@@ -260,7 +266,9 @@
 <node CREATED="1529529326111" ID="ID_1932569084" MODIFIED="1529529333390" TEXT="default case is optional"/>
 <node CREATED="1529530106187" ID="ID_703702833" MODIFIED="1529530113952" TEXT="condition is optional">
 <node CREATED="1529530024978" ID="ID_1453511479" MODIFIED="1529530049416" TEXT="Switch without a condition is the same as switch true"/>
-<node CREATED="1529530055305" ID="ID_662035709" MODIFIED="1529530065425" TEXT="A clean way to write long if-then-else chains"/>
+<node CREATED="1529530055305" ID="ID_662035709" MODIFIED="1530903136726" TEXT="A clean way to write long if-then-else chains">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 </node>
 <node CREATED="1529529144272" ID="ID_651990556" MODIFIED="1529529479458" TEXT="Runs only the selected case, not all the cases that follow">
@@ -302,10 +310,9 @@
 <node CREATED="1529532713662" ID="ID_1629644220" MODIFIED="1529532861214" TEXT="Used to simplify functions that perform various clean-up actions,&#xa;could use together with panic and recover"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ff9966" COLOR="#ffffff" CREATED="1529445171239" ID="ID_661666673" MODIFIED="1530654919691" POSITION="right" TEXT="Data Structures">
+<node BACKGROUND_COLOR="#ff9966" COLOR="#ffffff" CREATED="1529445171239" FOLDED="true" ID="ID_661666673" MODIFIED="1530906529365" POSITION="right" TEXT="Data Structures">
 <edge COLOR="#ff9966"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
-<icon BUILTIN="stop-sign"/>
 <node CREATED="1529452667428" ID="ID_843338280" MODIFIED="1529452670130" TEXT="Array">
 <node CREATED="1530644932132" ID="ID_1953439184" MODIFIED="1530644942235" TEXT="[n]T">
 <node CREATED="1530644946987" ID="ID_1299630365" MODIFIED="1530644953787" TEXT="an array of n values of type T"/>
@@ -374,28 +381,32 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#9966ff" COLOR="#ffffff" CREATED="1529113781222" ID="ID_547852304" MODIFIED="1530660874973" POSITION="left" TEXT="Standard Library Packages">
+<node BACKGROUND_COLOR="#9966ff" COLOR="#ffffff" CREATED="1529113781222" FOLDED="true" ID="ID_547852304" MODIFIED="1530906049512" POSITION="left" TEXT="Standard Library Packages">
 <edge COLOR="#9966ff"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529441650104" ID="ID_712916194" MODIFIED="1529441660313" TEXT="main()"/>
 <node CREATED="1529441911196" ID="ID_518903949" MODIFIED="1529442188281" TEXT="import packages">
 <node CREATED="1529441925799" ID="ID_464740814" MODIFIED="1529441930519" TEXT="import &quot;package&quot;"/>
-<node CREATED="1529441931095" ID="ID_1925577104" MODIFIED="1529442786978" TEXT="import (&#xa;        &quot;package1&quot; &#xa;        &quot;package2&quot;&#xa;)">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1529441931095" ID="ID_1925577104" MODIFIED="1530904066807" TEXT="import (&#xa;        &quot;package1&quot; &#xa;        &quot;package2&quot;&#xa;)">
 <node CREATED="1529446594302" ID="ID_327423350" MODIFIED="1529446600267" TEXT="&quot;factored&quot; import"/>
 </node>
 <node CREATED="1529453544029" ID="ID_258129791" MODIFIED="1529453549416" TEXT="import s &quot;strings&quot;">
-<node CREATED="1529453553817" ID="ID_879268663" MODIFIED="1529453562968" TEXT="Gives the package an alias name"/>
+<node CREATED="1529453553817" ID="ID_879268663" MODIFIED="1530903373255" TEXT="Gives the package an alias name">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 </node>
 <node CREATED="1529442230788" ID="ID_1515489700" MODIFIED="1529442234753" TEXT="exported names">
-<node CREATED="1529442241818" ID="ID_206851135" MODIFIED="1529442271174" TEXT="a name begins with a capital letter is exported"/>
+<node CREATED="1529442241818" ID="ID_206851135" MODIFIED="1530903347983" TEXT="a name begins with a Capital letter is exported">
+<icon BUILTIN="info"/>
+</node>
 <node CREATED="1529442272869" ID="ID_118874788" MODIFIED="1529442311795" TEXT="math.Pi is exported, math.pi is not"/>
 </node>
 <node CREATED="1529441587032" FOLDED="true" ID="ID_1153203390" MODIFIED="1529441644666" TEXT="fmt">
 <node CREATED="1529441619754" ID="ID_1394663648" MODIFIED="1529441625179" TEXT="fmt.Println()"/>
 </node>
 <node CREATED="1529441596659" ID="ID_1428928674" MODIFIED="1529441597784" TEXT="time"/>
-<node CREATED="1529441690469" ID="ID_1535987522" MODIFIED="1529441698402" TEXT="math, rand">
+<node CREATED="1529441690469" ID="ID_1535987522" LINK="https://golang.org/pkg/math/" MODIFIED="1530903301899" TEXT="math, rand">
 <node CREATED="1529441718917" ID="ID_1294444475" MODIFIED="1529441731195" TEXT="math/rand">
 <node CREATED="1529441734753" ID="ID_1489531486" MODIFIED="1529441769156" TEXT="rand.Seed()"/>
 <node CREATED="1529441742318" ID="ID_1394092997" MODIFIED="1529441764485" TEXT="rand.Intn()"/>
@@ -404,13 +415,16 @@
 <node CREATED="1529442037179" ID="ID_192279492" MODIFIED="1529442043156" TEXT="math.Sqrt()"/>
 </node>
 </node>
+<node CREATED="1530903210709" ID="ID_786815824" LINK="https://golang.org/pkg/regexp/" MODIFIED="1530903324272" TEXT="regexp">
+<node CREATED="1530904774199" ID="ID_245855097" MODIFIED="1530904776000" TEXT="go doc regexp/syntax"/>
 </node>
-<node BACKGROUND_COLOR="#339900" COLOR="#ffffff" CREATED="1529113826232" ID="ID_45303023" MODIFIED="1530649541346" POSITION="left" TEXT="Functions">
+</node>
+<node BACKGROUND_COLOR="#339900" COLOR="#ffffff" CREATED="1529113826232" FOLDED="true" ID="ID_45303023" MODIFIED="1530906050696" POSITION="left" TEXT="Functions">
 <edge COLOR="#339900"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529442329412" ID="ID_1982246518" MODIFIED="1529443817837" TEXT="Function Definition">
 <node CREATED="1529442445312" ID="ID_234352520" MODIFIED="1529442494924" TEXT="func myfunc()"/>
-<node CREATED="1529442496079" ID="ID_1124071157" MODIFIED="1529442757343" TEXT="func myfunc(x int, y int) int {&#xa;        return x + y&#xa;}&#xa;">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1529442496079" ID="ID_1124071157" MODIFIED="1530904076725" TEXT="func myfunc(x int, y int) int {&#xa;        return x + y&#xa;}&#xa;">
 <node CREATED="1529442801134" ID="ID_1383847556" MODIFIED="1529443855705" TEXT="Function parameters: type comes after the variable name"/>
 <node CREATED="1529443229386" ID="ID_777922514" MODIFIED="1529443864968" TEXT="Consecutive named function parameters share a type: &#xa;        x, y int"/>
 </node>
@@ -427,31 +441,14 @@
 </node>
 <node CREATED="1529443129327" ID="ID_797682902" MODIFIED="1529443157019" TEXT="return x + y"/>
 <node CREATED="1529443402576" ID="ID_603323008" MODIFIED="1529443415615" TEXT="return multiple results (any number)">
-<node CREATED="1529443425716" ID="ID_12018651" MODIFIED="1529443459028" TEXT="func swap(x, y string) (string, string) {&#xa;        return y, x&#xa;}"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1529443425716" ID="ID_12018651" MODIFIED="1530904044023" TEXT="func swap(x, y string) (string, string) {&#xa;        return y, x&#xa;}"/>
 </node>
 </node>
-</node>
-<node BACKGROUND_COLOR="#ff6666" COLOR="#ffffff" CREATED="1529452686534" ID="ID_1750523447" MODIFIED="1530654302040" POSITION="left" TEXT="Struct">
-<edge COLOR="#ff6666"/>
-<font BOLD="true" NAME="SansSerif" SIZE="14"/>
-<node CREATED="1529536231744" ID="ID_310011409" MODIFIED="1529536283568" TEXT="type Vertex struct {&#xa;        X int&#xa;        Y int&#xa;}&#xa;&#xa;fmt.Println(Vertex{1, 2})">
-<node CREATED="1529536294321" ID="ID_1453623156" MODIFIED="1529536306369" TEXT="A struct is a collection of fields"/>
-<node CREATED="1529536346133" ID="ID_1460725415" MODIFIED="1529536354153" TEXT="Access struct fields using a dot">
-<node CREATED="1529536358122" ID="ID_1905642972" MODIFIED="1529536381217" TEXT="v := Vertex{1, 2}&#xa;v.X = 4&#xa;fmt.Println(v.X)"/>
+<node CREATED="1530903378396" ID="ID_578474665" MODIFIED="1530903728680" TEXT="Closure">
+<icon BUILTIN="stop-sign"/>
 </node>
 </node>
-<node CREATED="1530656639143" ID="ID_900095231" MODIFIED="1530656679748" TEXT="Struct memory layout">
-<icon BUILTIN="idea"/>
-<node CREATED="1530656651296" ID="ID_1494659516" LINK="https://syslog.ravelin.com/go-and-memory-layout-6ef30c730d51" MODIFIED="1530656663600" TEXT="Reference"/>
-<node CREATED="1530656911367" ID="ID_519627387" LINK="http://golang-sizeof.tips/" MODIFIED="1530656926491" TEXT="golang-sizeof.tips"/>
-</node>
-<node CREATED="1530657692156" ID="ID_198732200" MODIFIED="1530657696879" TEXT="Embedded Types">
-<node CREATED="1530657701113" ID="ID_1855735769" MODIFIED="1530657718744" TEXT="Also known as Anonymous Fields"/>
-<node CREATED="1530657825426" ID="ID_1051508348" MODIFIED="1530657832809" TEXT="is-a relationship"/>
-<node CREATED="1530657720164" ID="ID_1589081580" MODIFIED="1530657808959" TEXT="type Android struct {&#xa;        Person // Person is a struct&#xa;        Model string&#xa;}&#xa;&#xa;a := new(Android)&#xa;a.Person.Talk()  // OK&#xa;a.Talk()  // OK"/>
-</node>
-</node>
-<node BACKGROUND_COLOR="#0000cc" COLOR="#ffffff" CREATED="1529534560377" ID="ID_1184855312" MODIFIED="1530660981047" POSITION="left" TEXT="Pointers">
+<node BACKGROUND_COLOR="#0000cc" COLOR="#ffffff" CREATED="1529534560377" FOLDED="true" ID="ID_1184855312" MODIFIED="1530906051880" POSITION="left" TEXT="Pointers">
 <edge COLOR="#0000cc"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1529535899479" ID="ID_596550128" MODIFIED="1529535909788" TEXT="*T">
@@ -460,7 +457,7 @@
 <node CREATED="1529535928458" ID="ID_603414395" MODIFIED="1529535936654" TEXT="nil: zero value"/>
 </node>
 <node CREATED="1529535992746" ID="ID_1514336807" MODIFIED="1530660735635" TEXT="&amp;">
-<node CREATED="1529536002559" ID="ID_218236218" MODIFIED="1529536016485" TEXT="i := 42&#xa;p = &amp;i"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1529536002559" ID="ID_218236218" MODIFIED="1530904054462" TEXT="i := 42&#xa;p = &amp;i"/>
 <node CREATED="1529536018746" ID="ID_1658350140" MODIFIED="1529536031366" TEXT="Generate a pointer to its operand"/>
 </node>
 <node CREATED="1529536045769" ID="ID_1720146513" MODIFIED="1529536047438" TEXT="*">
@@ -472,7 +469,41 @@
 <icon BUILTIN="button_cancel"/>
 </node>
 </node>
-<node CREATED="1530649646011" ID="ID_1904965904" MODIFIED="1530660587498" POSITION="left">
+<node BACKGROUND_COLOR="#ff6666" COLOR="#ffffff" CREATED="1529452686534" FOLDED="true" ID="ID_1750523447" MODIFIED="1530906053127" POSITION="left" TEXT="Struct">
+<edge COLOR="#ff6666"/>
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1529536231744" ID="ID_310011409" MODIFIED="1530904956873" TEXT="type Vertex struct {&#xa;        X int&#xa;        Y int&#xa;}&#xa;&#xa;fmt.Println(Vertex{1, 2})">
+<node CREATED="1529536294321" ID="ID_1453623156" MODIFIED="1529536306369" TEXT="A struct is a collection of fields"/>
+<node CREATED="1529536346133" ID="ID_1460725415" MODIFIED="1529536354153" TEXT="Access struct fields using a dot">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1529536358122" ID="ID_1905642972" MODIFIED="1530904015821" TEXT="v := Vertex{1, 2}&#xa;v.X = 4&#xa;fmt.Println(v.X)"/>
+</node>
+</node>
+<node CREATED="1530656639143" ID="ID_900095231" MODIFIED="1530656679748" TEXT="Struct memory layout">
+<icon BUILTIN="idea"/>
+<node CREATED="1530656651296" ID="ID_1494659516" LINK="https://syslog.ravelin.com/go-and-memory-layout-6ef30c730d51" MODIFIED="1530656663600" TEXT="Reference"/>
+<node CREATED="1530656911367" ID="ID_519627387" LINK="http://golang-sizeof.tips/" MODIFIED="1530656926491" TEXT="golang-sizeof.tips"/>
+</node>
+<node CREATED="1530657692156" ID="ID_198732200" MODIFIED="1530904291126" TEXT="Embedded Types">
+<node CREATED="1530657701113" ID="ID_1855735769" MODIFIED="1530904211035" TEXT="Also known as Anonymous Fields">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node CREATED="1530657825426" ID="ID_1051508348" MODIFIED="1530905152023" TEXT="is-a relationship, inheritance mechanism">
+<icon BUILTIN="info"/>
+<icon BUILTIN="idea"/>
+</node>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530657720164" ID="ID_1589081580" MODIFIED="1530904032655" TEXT="type Android struct {&#xa;        Person // Person is a struct&#xa;        Model string&#xa;}&#xa;&#xa;a := new(Android)&#xa;a.Person.Talk()  // OK&#xa;a.Talk()  // OK">
+<node CREATED="1530904466481" ID="ID_875063999" MODIFIED="1530904515712" TEXT="If anonymous field is a struct, its members&#xa;are accessible"/>
+</node>
+<node CREATED="1530904553964" ID="ID_1857490823" MODIFIED="1530904565328" TEXT="Naming conflits">
+<icon BUILTIN="idea"/>
+<node CREATED="1530904579424" ID="ID_1811887308" MODIFIED="1530904622544" TEXT="If a field in an outer struct has the same name as a field in an inner &#xa;anonymous struct, then the outer one is accessible by default"/>
+</node>
+</node>
+<node CREATED="1530904293046" ID="ID_1863341845" MODIFIED="1530904644904" TEXT="Multiple inheritance">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530904674376" ID="ID_439307744" MODIFIED="1530904730919" TEXT="type CameraPhone struct {&#xa;    Camera //has anonymous camera&#xa;    Phone //has anonymous phone &#xa;}&#xa;&#xa;cp := new (CameraPhone)  //a new camera phone instance&#xa;fmt.Println(&quot;It can take a picture: &quot;, cp.takePicture())&#xa;fmt.Println(&quot;It can also make calls: &quot;, cp.call())"/>
+</node>
+</node>
+<node CREATED="1530649646011" ID="ID_1904965904" MODIFIED="1530906159772" POSITION="left">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -481,15 +512,29 @@
     <img src="../../../../Users/euchen/Desktop/Go-Logo/gologo_blue.png" />
   </body>
 </html></richcontent>
+<edge COLOR="#66ccff"/>
+<node BACKGROUND_COLOR="#66ccff" COLOR="#ffffff" CREATED="1530906219336" ID="ID_1349228700" MODIFIED="1530906265331" TEXT="Reference">
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
 </node>
-<node BACKGROUND_COLOR="#ff9900" COLOR="#ffffff" CREATED="1529113972257" ID="ID_464598403" MODIFIED="1530654304589" POSITION="left" TEXT="Methods">
+<node BACKGROUND_COLOR="#66ccff" COLOR="#ffffff" CREATED="1530906110343" ID="ID_708982926" MODIFIED="1530906445419" TEXT="Small Projects">
+<font BOLD="true" NAME="SansSerif" SIZE="14"/>
+<node CREATED="1530906280711" ID="ID_850312889" LINK="https://sj14.gitlab.io/post/2018-07-01-go-unix-shell/" MODIFIED="1530906503188" TEXT="Implement a Unix Shell with Go">
+<icon BUILTIN="bookmark"/>
+</node>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ff9900" COLOR="#ffffff" CREATED="1529113972257" FOLDED="true" ID="ID_464598403" MODIFIED="1530906055809" POSITION="left" TEXT="Methods">
 <edge COLOR="#ff9900"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1530653860625" ID="ID_200880610" MODIFIED="1530654083075" TEXT="A method is a function with a special receiver argument">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530653940667" ID="ID_840119915" MODIFIED="1530905997302" TEXT="type Vertex struct {&#xa;        X, Y  float64&#xa;}&#xa;&#xa;func (v Vertex) Abs() float64 {&#xa;        return math.Sqrt(v.X*v.X + v.Y*v.Y)&#xa;}&#xa;&#xa;func main() {&#xa;        v := Vertex{3, 4}&#xa;        fmt.Println(v.Abs())&#xa;}"/>
+<node CREATED="1530903836866" ID="ID_771845664" MODIFIED="1530903841906" TEXT="A receiver is a type"/>
 <node CREATED="1530653918889" ID="ID_1479772800" MODIFIED="1530653934824" TEXT="A receiver is between the func keyword and the method name"/>
-<node CREATED="1530653940667" ID="ID_840119915" MODIFIED="1530654173222" TEXT="type Vertex struct {&#xa;        X, Y  float64&#xa;}&#xa;&#xa;func (v Vertex) Abs() float64 {&#xa;        return math.Sqrt(v.X*v.X + v.Y*v.Y)&#xa;}&#xa;&#xa;func main() {&#xa;        v := Vertex{3, 4}&#xa;        fmt.Println(v.Abs())&#xa;}"/>
+<node CREATED="1530906000691" ID="ID_1033434075" MODIFIED="1530906016399" TEXT="Think a receiver works like the &quot;this&quot; pointer in C++">
+<icon BUILTIN="idea"/>
 </node>
-<node CREATED="1530654084951" ID="ID_1415408112" MODIFIED="1530655100699" TEXT="Methods are defined on types (structs, or non-structs), &#xa;similar to Class methods">
+</node>
+<node CREATED="1530654084951" ID="ID_1415408112" MODIFIED="1530903890484" TEXT="Methods are defined on types (structs, or non-structs), &#xa;similar to Class methods">
 <node CREATED="1530654508420" ID="ID_1150117334" MODIFIED="1530654574666" TEXT="Can only declare a method with a receiver &#xa;whose type is defined in the same package">
 <node CREATED="1530654577777" ID="ID_1773318822" MODIFIED="1530654605014" TEXT="type MyFloat float64&#xa;func (f MyFloat) Abs() float64 {&#xa;}">
 <icon BUILTIN="button_ok"/>
@@ -500,15 +545,19 @@
 </node>
 </node>
 <node CREATED="1530655148096" ID="ID_1032702070" MODIFIED="1530656423792" TEXT="Declare methods with pointer receivers">
-<node CREATED="1530655212680" ID="ID_60897864" MODIFIED="1530656113815" TEXT="func (v *Vertex) Scale(f float64) {&#xa;        v.X = v.X * f&#xa;        v.Y = v.Y * f&#xa;}&#xa;&#xa;var v Vertex&#xa;v.Scale(5) // OK&#xa;p := &amp;v&#xa;p.Scale(10) // OK"/>
-<node CREATED="1530655279256" ID="ID_880462702" MODIFIED="1530655300537" TEXT="Can modify the value to which the receiver points">
-<node CREATED="1530655327148" ID="ID_4393975" MODIFIED="1530655433856" TEXT="With a value receiver, method &#xa;operates on a copy of the original value"/>
-</node>
-<node CREATED="1530655486547" ID="ID_1265694011" MODIFIED="1530656082535" TEXT="Methods with pointer receivers take &#xa;either a value or a pointer as the receiver">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530655212680" ID="ID_60897864" MODIFIED="1530904086446" TEXT="func (v *Vertex) Scale(f float64) {&#xa;        v.X = v.X * f&#xa;        v.Y = v.Y * f&#xa;}&#xa;&#xa;var v Vertex&#xa;v.Scale(5) // OK - Go interprets value to pointer&#xa;p := &amp;v&#xa;p.Scale(10) // OK"/>
+<node CREATED="1530655486547" ID="ID_1265694011" MODIFIED="1530903951954" TEXT="Methods with pointer receivers take &#xa;either a value or a pointer as the receiver">
 <node CREATED="1530655516282" ID="ID_160055764" MODIFIED="1530655527909" TEXT="Functions with a pointer argument must take a pointer"/>
-<node CREATED="1530656153365" ID="ID_1393429141" MODIFIED="1530656452667" TEXT="For methods, Go interprets value as &amp;value, as a convenience">
-<icon BUILTIN="bookmark"/>
+<node CREATED="1530656153365" ID="ID_1393429141" MODIFIED="1530904128076" TEXT="For methods, Go interprets value as &amp;value, as a convenience">
+<icon BUILTIN="info"/>
 </node>
+<node CREATED="1530904148278" ID="ID_230803845" MODIFIED="1530904164980" TEXT="But Go will NOT interprets a pointer as a value">
+<icon BUILTIN="button_cancel"/>
+</node>
+</node>
+<node CREATED="1530655279256" ID="ID_880462702" MODIFIED="1530903932796" TEXT="Can modify the value to which the receiver points">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1530655327148" ID="ID_4393975" MODIFIED="1530655433856" TEXT="With a value receiver, method &#xa;operates on a copy of the original value"/>
 </node>
 <node CREATED="1530656263101" ID="ID_1792041768" MODIFIED="1530656437723" TEXT="Why use a pointer receiver?">
 <icon BUILTIN="info"/>
@@ -517,68 +566,79 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#00cccc" COLOR="#ffffff" CREATED="1529113978430" ID="ID_1450888648" MODIFIED="1530657341709" POSITION="left" TEXT="Interface">
+<node BACKGROUND_COLOR="#00cccc" COLOR="#ffffff" CREATED="1529113978430" FOLDED="true" ID="ID_1450888648" MODIFIED="1530906524981" POSITION="left" TEXT="Interface">
 <edge COLOR="#00cccc"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <icon BUILTIN="hourglass"/>
-<node CREATED="1530656473850" ID="ID_1646268349" MODIFIED="1530658279069" TEXT="An interface type is defined as a set of method">
-<node CREATED="1530656977708" ID="ID_1843197105" MODIFIED="1530657000532" TEXT="A value of interface type can hold&#xa;any value that implements those methods"/>
+<node CREATED="1530656473850" ID="ID_1646268349" MODIFIED="1530905104857" TEXT="An interface is a Type defined as a set of Methods">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530656970543" ID="ID_968775092" MODIFIED="1530905265394" TEXT="type Abser interface {&#xa;        Abs()  float64&#xa;}&#xa;&#xa;var a Abser&#xa;f := MyFloat(-math.Sqrt2)&#xa;v := Vertex{3, 4}&#xa;&#xa;a = f // a MyFloat implements Abser&#xa;a = &amp;v // a *Vertex implements Abser"/>
 <node CREATED="1530657171105" ID="ID_1431470300" MODIFIED="1530665583457" TEXT="A type implements an interface by implementing its methods.&#xa;Interfaces are implemented implicitly, no explicit declaration."/>
-<node CREATED="1530657904371" ID="ID_1682305234" MODIFIED="1530665590027" TEXT="Interfaces make the similarities explicit, &#xa;somewhat similar to C++ Template">
+<node CREATED="1530656977708" ID="ID_1843197105" MODIFIED="1530905592978" TEXT="A value of interface type can hold&#xa;any value (of a type) that implements those methods">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node CREATED="1530657904371" ID="ID_1682305234" MODIFIED="1530905257064" TEXT="Interfaces make the similarities explicit, &#xa;somewhat similar to C++ Virtual Class.&#xa;Polymorphism.">
+<icon BUILTIN="info"/>
 <icon BUILTIN="idea"/>
 </node>
-<node CREATED="1530656970543" ID="ID_968775092" MODIFIED="1530665584674" TEXT="type Abser interface {&#xa;        Abs()  float64&#xa;}&#xa;&#xa;var a Abser&#xa;f := MyFloat(-math.Sqrt2)&#xa;v := Vertex{3, 4}&#xa;&#xa;a = f // a MyFloat implements Abser&#xa;a = &amp;v // a *Vertex implements Abser"/>
+</node>
+<node CREATED="1530658665554" ID="ID_1004293018" MODIFIED="1530905922332" TEXT="Under the hood, Interface values">
+<node CREATED="1530658620935" ID="ID_386602746" MODIFIED="1530905526987" TEXT="Interface values: a tuple of a value &#xa;and a concrete type (value, type)">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530658816693" ID="ID_1222221677" MODIFIED="1530905538230" TEXT="fmt.Printf(&quot;(%v, %T)\n&quot;, i, i)"/>
+</node>
+<node CREATED="1530658688168" ID="ID_1876625782" MODIFIED="1530658723594" TEXT="Call a method on an interface value executes the method &#xa;of the same name on its underlying type">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530905728757" ID="ID_235911504" MODIFIED="1530905792362" TEXT="type Inter interface {&#xa;    Get() int &#xa;    Set(int)&#xa;}&#xa;type St struct {&#xa;    Age int &#xa;}&#xa;func(s St) Get() int {&#xa;    return s.Age&#xa;} &#xa;func test(i Inter) {&#xa;    i.Set(10)&#xa;    fmt.Println(i.Get())&#xa;}&#xa;func main() {&#xa;    s := St{}&#xa;    test(&amp;s)&#xa;}"/>
+</node>
+<node CREATED="1530666444932" ID="ID_343797498" MODIFIED="1530666515636" TEXT="Why we can assign value to an interface?">
+<icon BUILTIN="smiley-neutral"/>
+<node CREATED="1530905816398" ID="ID_1258122620" MODIFIED="1530905886846" TEXT="If multiple types implement an interface,&#xa;all those types can be stored in a variable of type &quot;that interface&quot;"/>
+</node>
 </node>
 <node CREATED="1530658280229" ID="ID_671297328" MODIFIED="1530658312397" TEXT="Use interface types as arguments to functions">
-<node CREATED="1530658319699" ID="ID_95229706" MODIFIED="1530658483177" TEXT="// Shape is an interface type&#xa;type Shape interface {&#xa;        area() float64&#xa;}&#xa;&#xa;func totalArea(shapes ...Shape) float64 {&#xa;        var area float64&#xa;        for _, s := range shapes {&#xa;                area += s.area()&#xa;        }&#xa;        return area&#xa;}&#xa;&#xa;totalArea(&amp;c, &amp;r)"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530658319699" ID="ID_95229706" MODIFIED="1530904100981" TEXT="// Shape is an interface type&#xa;type Shape interface {&#xa;        area() float64&#xa;}&#xa;&#xa;func totalArea(shapes ...Shape) float64 {&#xa;        var area float64&#xa;        for _, s := range shapes {&#xa;                area += s.area()&#xa;        }&#xa;        return area&#xa;}&#xa;&#xa;totalArea(&amp;c, &amp;r)"/>
 </node>
 <node CREATED="1530658492805" ID="ID_1809975070" MODIFIED="1530658501482" TEXT="Use interface types as struct fields">
-<node CREATED="1530658504963" ID="ID_1747452606" MODIFIED="1530658524137" TEXT="type MultiShape struct {&#xa;        shapes []Shape&#xa;}"/>
-</node>
-<node CREATED="1530658665554" ID="ID_1004293018" MODIFIED="1530658669591" TEXT="Under the hood">
-<node CREATED="1530658620935" ID="ID_386602746" MODIFIED="1530658847403" TEXT="Interface values: a tuple of a value &#xa;and a concrete type (value, type)">
-<node CREATED="1530658816693" ID="ID_1222221677" MODIFIED="1530665229111" TEXT="fmt.Printf(&quot;(%v, %T)\n&quot;, i, i)"/>
-</node>
-<node CREATED="1530658688168" ID="ID_1876625782" MODIFIED="1530658723594" TEXT="Call a method on an interface value executes the method &#xa;of the same name on its underlying type"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530658504963" ID="ID_1747452606" MODIFIED="1530905286291" TEXT="type MultiShape struct {&#xa;        shapes []Shape&#xa;}"/>
 </node>
 <node CREATED="1530659872404" ID="ID_292425599" MODIFIED="1530659972585" TEXT="Nil interface values">
+<node CREATED="1530665138289" ID="ID_541920517" MODIFIED="1530905317520" TEXT="A nil interface value holds neither value nor concrete type">
+<node CREATED="1530665156583" ID="ID_708700329" MODIFIED="1530905324437" TEXT="Call a method on a nil interface is a run-time error">
+<icon BUILTIN="button_cancel"/>
+</node>
+</node>
 <node CREATED="1530659753548" ID="ID_1019429391" MODIFIED="1530659821977" TEXT="An interface value that holds a nil concrete value is itself non-nil">
 <icon BUILTIN="messagebox_warning"/>
-<node CREATED="1530659682072" ID="ID_1236134774" MODIFIED="1530659749974" TEXT="If an interface value is nil, the method will be&#xa;called with a nil receiver"/>
+<node CREATED="1530659682072" ID="ID_1236134774" MODIFIED="1530905334269" TEXT="If an interface value is nil, the method will be&#xa;called with a nil receiver">
+<icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1530665138289" ID="ID_541920517" MODIFIED="1530665155362" TEXT="A nil interface value holds neither value nor concrete type">
-<node CREATED="1530665156583" ID="ID_708700329" MODIFIED="1530665177726" TEXT="Call a method on a nil interface is a run-time error"/>
 </node>
 </node>
 <node CREATED="1530659974051" ID="ID_588076330" MODIFIED="1530665536027" TEXT="Empty interface">
 <node CREATED="1530665321092" ID="ID_270481201" MODIFIED="1530665334307" TEXT="An interface type specifies zero methods">
-<node CREATED="1530665335823" ID="ID_499788459" MODIFIED="1530665351959" TEXT="var i interface{}"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530665335823" ID="ID_499788459" MODIFIED="1530905347087" TEXT="var i interface{}"/>
 </node>
-<node CREATED="1530665357551" ID="ID_1865134424" MODIFIED="1530665393913" TEXT="An empty interface may hold values of any type &#xa;that implements at least zero methods"/>
-<node CREATED="1530665400861" ID="ID_1252571432" MODIFIED="1530665423968" TEXT="Used by code that handles values of unknown type">
-<icon BUILTIN="button_ok"/>
+<node CREATED="1530665357551" ID="ID_1865134424" MODIFIED="1530665393913" TEXT="An empty interface may hold values of any type &#xa;that implements at least zero methods">
+<node CREATED="1530905490145" ID="ID_1661480304" MODIFIED="1530905507537" TEXT="It&apos;s true that ALL types implements empty interface"/>
+</node>
+<node CREATED="1530665400861" ID="ID_1252571432" MODIFIED="1530905388471" TEXT="Used by code that handles values of unknown type">
+<icon BUILTIN="info"/>
 <node CREATED="1530665426058" ID="ID_1331855689" MODIFIED="1530665472265" TEXT="fmt.Print: takes any number of arguments of type interface{}"/>
-<node CREATED="1530665474254" ID="ID_1050094471" MODIFIED="1530665526233" TEXT="var i interface {}&#xa;describe(i)&#xa;&#xa;i = 42&#xa;describe(i)&#xa;&#xa;func describe(i interface{}) {&#xa;        fmt.Printf(&quot;(%v, %T)\n&quot;, i, i)&#xa;}"/>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530665474254" ID="ID_1050094471" MODIFIED="1530905398801" TEXT="var i interface {}&#xa;describe(i)&#xa;&#xa;i = 42&#xa;describe(i)&#xa;&#xa;func describe(i interface{}) {&#xa;        fmt.Printf(&quot;(%v, %T)\n&quot;, i, i)&#xa;}"/>
 </node>
 </node>
 <node CREATED="1530665537687" ID="ID_1327433626" MODIFIED="1530665541730" TEXT="Type assertions">
 <node CREATED="1530665727931" ID="ID_1843745401" MODIFIED="1530665752398" TEXT="A type assertion provides access to an interface value&apos;s underlying concrete value"/>
-<node CREATED="1530665770751" ID="ID_1661850012" MODIFIED="1530665862998" TEXT="t := i.(T)">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530665770751" ID="ID_1661850012" MODIFIED="1530905419873" TEXT="t := i.(T)">
 <font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1530665793822" ID="ID_1760373557" MODIFIED="1530665837854" TEXT="Asserts that the interface value i holds the concrete type T&#xa;and assigns the underlying T value to the variable t">
 <node CREATED="1530666221759" ID="ID_1023655900" MODIFIED="1530666240738" TEXT="Trigger a panic if i does not hold a T type"/>
 </node>
 </node>
-<node CREATED="1530666133160" ID="ID_151233778" MODIFIED="1530666139149" TEXT="t, ok := i.(T)">
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530666133160" ID="ID_151233778" MODIFIED="1530905428523" TEXT="t, ok := i.(T)">
 <node CREATED="1530666142263" ID="ID_919666099" MODIFIED="1530666263508" TEXT="Test whether an interface value holds a specific type, returns a boolean">
 <node CREATED="1530666266055" ID="ID_1456937603" MODIFIED="1530666275599" TEXT="Do not trigger any panic"/>
 </node>
 </node>
-<node CREATED="1530666308592" ID="ID_1988715391" MODIFIED="1530666394455" TEXT="var i interface{} = &quot;hello&quot;&#xa;&#xa;s := i.(string)&#xa;s, ok := i.(string)  // hello true&#xa;f, ok := i.(float64)  // 0 false&#xa;f = i.(float64) // panic">
-<node CREATED="1530666444932" ID="ID_343797498" MODIFIED="1530666515636" TEXT="Why we can assign value to an interface?">
-<icon BUILTIN="smiley-neutral"/>
-</node>
-</node>
+<node BACKGROUND_COLOR="#ffffcc" CREATED="1530666308592" ID="ID_1988715391" MODIFIED="1530905446354" TEXT="var i interface{} = &quot;hello&quot;&#xa;&#xa;s := i.(string)&#xa;s, ok := i.(string)  // hello true&#xa;f, ok := i.(float64)  // 0 false&#xa;f = i.(float64) // panic"/>
 </node>
 <node CREATED="1530665554077" ID="ID_1053072093" MODIFIED="1530665558186" TEXT="Type switches"/>
 <node CREATED="1530665601551" ID="ID_1103647588" MODIFIED="1530665635854" TEXT="Built-in interfaces">
@@ -592,7 +652,7 @@
 <edge COLOR="#996600"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 </node>
-<node BACKGROUND_COLOR="#cccc00" COLOR="#ffffff" CREATED="1529113795786" ID="ID_987127015" MODIFIED="1530657645203" POSITION="right" TEXT="File Operation">
+<node BACKGROUND_COLOR="#cccc00" COLOR="#ffffff" CREATED="1529113795786" FOLDED="true" ID="ID_987127015" MODIFIED="1530902891197" POSITION="right" TEXT="File Operation">
 <edge COLOR="#cccc00"/>
 <arrowlink DESTINATION="ID_987127015" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_220735718" STARTARROW="None" STARTINCLINATION="0;0;"/>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_987127015" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_220735718" SOURCE="ID_987127015" STARTARROW="None" STARTINCLINATION="0;0;"/>
@@ -637,7 +697,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cc99ff" COLOR="#ffffff" CREATED="1529113800899" ID="ID_1984710857" MODIFIED="1530657648181" POSITION="right" TEXT="IO">
+<node BACKGROUND_COLOR="#cc99ff" COLOR="#ffffff" CREATED="1529113800899" FOLDED="true" ID="ID_1984710857" MODIFIED="1530902893355" POSITION="right" TEXT="IO">
 <edge COLOR="#cc99ff"/>
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
 <node CREATED="1530648203814" ID="ID_289819398" LINK="https://golang.org/pkg/io/" MODIFIED="1530653791589" TEXT="import &quot;io&quot;"/>
